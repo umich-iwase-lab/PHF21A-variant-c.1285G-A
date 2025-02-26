@@ -1,0 +1,38 @@
+# define sample name 
+
+samples: #change according to your samples
+    293T_wt1:
+        fq1: "DM001_293T_wt1_331591w_JE5_R1.fastq"
+        fq2: "DM001_293T_wt1_331591w_JE5_R2.fastq"
+    293T_mut1:
+        fq1: "DM002_293T_mut1_331591w_JE6_R1.fastq"
+        fq2: "DM002_293T_mut1_331591w_JE6_R2.fastq"
+    293T_wt2:
+        fq1: "DM003_293T_wt2_331591w_JE7_R1.fastq"
+        fq2: "DM003_293T_wt2_331591w_JE7_R2.fastq"
+    293T_mut2:
+        fq1: "DM004_293T_mut2_331591w_JE8_R1.fastq"
+        fq2: "DM004_293T_mut2_331591w_JE8_R2.fastq"
+    neurons_wt1:
+        fq1: "DM005_neurons_wt1_331591w_JE9_R1.fastq"
+        fq2: "DM005_neurons_wt1_331591w_JE9_R2.fastq" 
+    neurons_mut1:
+        fq1: "DM006_neurons_mut1_331591w_JE10_R1.fastq"
+        fq2: "DM006_neurons_mut1_331591w_JE10_R2.fastq"
+    neurons_wt2:
+        fq1: "DM007_neurons_wt2_331591w_JE11_R1.fastq"
+        fq2: "DM007_neurons_wt2_331591w_JE11_R2.fastq" 
+    neurons_mut2:
+        fq1: "DM008_neurons_mut2_331591w_JE12_R1.fastq"
+        fq2: "DM008_neurons_mut2_331591w_JE12_R2.fastq"
+
+
+
+bowtie2-build --large-index /nfs/turbo/umms-siwase/GENOME/HG38/hg38.fa /nfs/turbo/umms-siwase/GENOME_INDICES/HG38/bt2_hg38-index
+
+ls -lh /nfs/turbo/umms-siwase/GENOME_INDICES/HG38/bt2_hg38-index*
+ls -lh /scratch/siwase_root/siwase99/mgavilan/bt2_hg38-index*
+rm /nfs/turbo/umms-siwase/GENOME_INDICES/HG38/bt2_hg38-index.*
+rm /scratch/siwase_root/siwase99/mgavilan/bt2_hg38-index.*
+
+bowtie2-build --verbose /nfs/turbo/umms-siwase/GENOME/HG38/hg38.fa /scratch/siwase_root/siwase99/mgavilan/bt2_hg38-index &> bowtie2_build.log
