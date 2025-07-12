@@ -3,3 +3,6 @@
 Abstract
 
 PHF21A is a histone reader protein that recognizes unmethylated H3 lysine 4 and binds to DNA through its AT-hook motif. PHF21A heterozygosity is associated with intellectual disability, behavioral issues, and craniofacial dysmorphism, with or without seizures (IDDBCS), also known as PHF21A-related neurodevelopmental disorders. To date, the only missense variant associated with PHF21A-related disorders is c.1285G>A, which substitutes one of the core amino acids consisting of the AT-hook motif. This variant, located at the last nucleotide of exon 13, potentially disrupts both alternative splicing and the DNA binding function, providing a unique opportunity to investigate the molecular mechanisms underlying the disorders. Here, we systematically investigated the consequences of this variant on mRNA splicing and DNA binding. Our results indicate that the variant significantly reduced the splicing efficiency of PHF21A isoforms while maintaining DNA binding capability. Thus, reduced dosage rather than impaired DNA binding likely contributes to the cognitive impairments seen in the individual with this variant.
+
+https://pubmed.ncbi.nlm.nih.gov/40622422/
+DOI: 10.1007/s10571-025-01584-8
